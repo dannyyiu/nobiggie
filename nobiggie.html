@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta name="viewport" content="width=800, initial-scale=1" />
+<title>No Biggie</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/flat-ui.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="init" class="outer">
+<div class="middle">
+<div class="inner">
+
+    <h5>No Biggie <br/>Posemaniacs <small>Musclemen &amp; Kids</small><br/><small>Filtered</small></h5>
+
+
+  <div class="row">
+    <!-- timer selection -->
+    <div class="col-xs-3 inner">
+      <div id="timer-select" class="btn-toolbar">
+        <div class="btn-group">
+          <a class="btn btn-primary">30s</a>
+          <a class="btn btn-primary active">60s</a>
+          <a class="btn btn-primary">90s</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /row -->
+
+  <div class="row inner">
+    <!-- countdown and fullscreen selection -->
+    <div class="col-xs-6">
+      <label class="checkbox" for="checkbox2">
+        <input id="countdown-select" type="checkbox" checked="checked" value="" id="checkbox2" data-toggle="checkbox">
+        Countdown
+      </label>
+    </div>
+  </div> <!-- /row -->
+
+  <div class="row space-below">
+    <!-- start -->
+    <div class="col-xs-6 inner">
+      <a id="fullscreen-btn" href="#" class="btn btn-block btn-large btn-primary">Fullscreen Toggle</a>
+    </div>
+  </div> <!-- /row -->
+
+  <div class="row">
+    <!-- start -->
+    <div class="col-xs-6 inner">
+      <a id="start-btn" href="#" class="btn btn-block btn-large btn-danger">Start</a>
+    </div>
+  </div> <!-- /row -->
+
+</div>
+</div>
+</div> <!-- /init -->
+
+
+<div id="pic" hidden>
+  <img id="pose-img1" class="pose-photo" />
+  <img id="pose-img2" class="pose-photo" hidden/>
+</div>
+
+<div id="countdown" hidden>
+<h1 id="count"></h1>
+</div>
+
+<div id="history" hidden></div>
+
+<script 
+  src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
